@@ -1,0 +1,108 @@
+% Beautified example based on latex_zone2/2.tex
+% This file is a style-enhanced copy for preview; original file not modified.
+\documentclass[a4paper,11pt]{article}
+
+% Encoding and fonts
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{xurl}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{tcolorbox}
+\usepackage{sectsty}
+\usepackage{titlesec}
+
+% Theme colors (school color)
+\definecolor{schoolblue}{RGB}{0,82,147}
+% create semantic aliases for tinted variants (avoid using '!' in defined names)
+\colorlet{schoolbluelight}{schoolblue!8}
+\colorlet{schoolbluelighter}{schoolblue!6}
+\colorlet{schoolbluebox}{schoolblue!10}
+\colorlet{schoolblueframe}{schoolblue!30}
+\definecolor{sectioncolor}{RGB}{41,128,185}
+
+% Hyperref colors
+\hypersetup{colorlinks=true, linkcolor=schoolblue, urlcolor=schoolblue, citecolor=schoolblue}
+
+% Section style
+\allsectionsfont{\normalfont\bfseries\color{schoolblue}}
+\titleformat{\section}{\large\bfseries\color{schoolblue}}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries\color{sectioncolor}}{\thesubsection}{0.5em}{}
+
+% Executive summary box style
+\tcbset{summarystyle/.style={colback=schoolbluelight, colframe=schoolblue, leftrule=4pt, boxsep=6pt, arc=3pt}}
+
+% Fancy header
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.8pt}
+\renewcommand{\headrule}{\color{schoolblue}\hrule width\headwidth height\headrulewidth\relax}
+\fancyhead[L]{\footnotesize \textbf{\color{schoolblue}Foundation in Green and Sustainable Finance}}
+\fancyhead[R]{\footnotesize Policy Brief}
+\fancyfoot[C]{\thepage}
+
+% Spacing
+\onehalfspacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.8em}
+
+% Keypoint command
+\newcommand{\keypoint}[1]{\vspace{0.5em}\begin{tcolorbox}[colback=schoolbluelighter, colframe=schoolblueframe, leftrule=3pt, boxsep=4pt]\textbf{\color{schoolblue}Key Insight:} #1\end{tcolorbox}\vspace{0.5em}}
+
+% boxed text (legacy support)
+\newcommand{\boxedtext}[1]{\noindent\colorbox{schoolbluebox}{\parbox{\dimexpr\linewidth-2\fboxsep}{#1}}}
+
+% Caption style
+\captionsetup{font=small, labelfont=bf, labelfont={color=schoolblue}, textfont=normal}
+
+% Document meta
+\title{\color{schoolblue}\textbf{China's Sustainable Aviation Fuel: How to Break Through the Bottleneck of Large-scale Production?}}
+\author{Kaibiao ZHU, Hongyue WU, Rongjia XU}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+% Executive Summary
+\section*{Executive Summary}
+\begin{tcolorbox}[summarystyle]
+\textbf{At present, the scale-up of China's SAF (Sustainable Aviation Fuel) faces three core bottlenecks: Firstly, there are only directional goals but no binding requirements for blending or carbon intensity, resulting in unstable market expectations; Secondly, the raw materials mainly consist of waste oils, with scattered collection and transportation and significant cross-border mismatch; Thirdly, the cost is significantly higher than that of fossil jet fuel, and the incentives are weak. The existing accounting rules have not yet been integrated with the price mechanism. The corresponding solutions are as follows: Firstly, through the formulation of laws, implement mandatory blending in stages and provide supporting mechanisms such as tradable certificates and compliance cost caps to create a predictable and rigid demand; Secondly, establish a "Southeast Asia - China" raw material coordination mechanism and a unified book-and-claim platform across the country to alleviate supply mismatch and traceability problems; Finally, introduce production-side support based on the lifecycle carbon intensity, directly offsetting price differences and closing the loop with domestic accounting rules.}
+\end{tcolorbox}
+
+\vspace{1em}
+\hrule
+\vspace{1.5em}
+
+\section{Introduction}
+Aviation is one of the "difficult-to-decarbonize" industries, and in the near and medium term, it still heavily relies on liquid fuels. Sustainable Aviation Fuel (SAF) can be seamlessly integrated with existing aircraft and fuel supply systems and is widely regarded as the most feasible main path for the 2030s. Internationally, several economies have adopted "pre-defined rules, then attract investment" approaches, such as mandatory blending, certificate trading, and tax incentives. Domestically, multiple rounds of demonstrations have been completed, application pilot projects have been initiated, and standardization construction has been advanced. However, there are still constraints in terms of cost, raw materials, and market mechanisms. This policy brief answers: why has SAF not achieved large-scale production after multiple rounds of demonstrations in China, and how each key bottleneck should be quickly resolved. This article focuses on policies and market mechanisms, targeting decision-makers and industry entities who need to allocate resources and formulate rules based on this. It mainly covers domestic policies and research over the past five years, and explores three key bottlenecks: the lack of binding demand signals, the mismatch between raw materials and supply, and the incomplete price mechanism and accounting. And for each issue, an actionable option is proposed, and compared with international practices to verify feasibility and implementation paths.
+
+\section{Overview of the problems}
+\subsection{Targets exist, but without binding mandate}
+The "Special Plan for Civil Aviation Green Development during the 14th Five-Year Plan Period" has set the industry target of "cumulative consumption of sustainable aviation fuel (SAF) reaching 50,000 tons by 2025", but it has not established a mandatory blending ratio nationwide or a unified carbon intensity threshold. This is a directional goal rather than a legal constraint, making it difficult to form a predictable rigid demand. During the same period, more focused application pilots and demonstrations have been promoted. The competent authorities have released the phased arrangements for the pilot projects, indicating that the overall situation is still in the "exploration --- verification" stage. On the industrial side, "China's Sustainable Aviation Fuel --- The Road to Carbon Neutrality for the Aviation Industry" (Deloitte, 2023) has summarized that as of May 2023, the total operating and planned production capacity in China is approximately 160--180 million tons per year, mainly based on the HEFA route, confirming the characteristic of "having projects and early implementation". Without strong constraints, the production capacity is difficult to steadily increase, and the renovation of airport storage and independent tank storage is also difficult to justify the investment return.
+
+\subsection{Raw material supply constraints and cross-border mismatches}
+At present, the most mature and accessible raw material is still waste edible oil (UCO), but it faces practical constraints such as scattered sources, small recycling radius, high collection and transportation costs, and limited recoverable volume. Moreover, driven by international market prices and demand, UCO has the risk of outflow, which raises domestic raw material prices and weakens supply stability. The research report "Research on the Development of Sustainable Aviation Fuel Industry in China" points out: In the medium and long term, while consolidating the foundation of UCO, it is necessary to gradually expand to various raw materials such as agricultural and forestry waste, and improve the cross-regional collection and transportation as well as quality traceability system. Otherwise, the "raw material bottleneck" will directly restrict the ramp-up of production capacity and continuous supply. Deloitte's report "China's Sustainable Aviation Fuel - The Road to Carbon Neutrality for the Aviation Industry" based on customs and other data shows the synchronous growth of UCO exports and domestic uses, and gives theoretical upper limit estimates of potential available raw materials and corresponding SAF production capacity (about 46 million tons per grade upper limit), while emphasizing that the potential needs to be transformed into available supply depends on the collection network, traceability and priority rules. This directly affects the annual blending plans of airlines and long-term supply contracts of suppliers. Without a stable, traceable and large-scale raw material system, it is difficult to support stable blending and long-term supply contracts, and the costs and risks of the upstream and downstream of the industry cannot be accepted by banks and investors.
+
+\subsection{High costs, weak incentives, accounting---pricing misalignment}
+China's Study on Sustainable Aviation Fuel Industry Development indicates that the unit cost of multiple SAF production pathways is approximately 2--6 times that of conventional petroleum-based jet fuel, making the "green premium" a core barrier to commercialization. Concurrently, insufficient fiscal/tax incentives and the absence of price transmission mechanisms make it difficult for airlines and fuel producers to absorb this cost differential. Deloitte's report, Sustainable Aviation Fuel in China -- Aviation's Path to Carbon Neutrality, further cites the price point and abatement cost for neat SAF (approximately \$8.67 per gallon; \textasciitilde\$1,000--1,200 per ton of CO\textsubscript{2}), analyzing key cost drivers such as feedstock availability, economies of scale, policy incentives, value chain efficiency, and reporting standards. The report underscores that reliance on demonstration projects alone is insufficient for spontaneous industry growth.
+
+% ... rest of original content truncated for brevity in this preview file ...
+
+\begin{thebibliography}{9}
+
+\bibitem{deloitte2023}
+Deloitte. (2023). \textit{Sustainable aviation fuels (SAF) in China: Checking for take-off}. Deloitte. 
+\url{https://www.deloitte.com/cn/zh/Industries/energy/perspectives/saf-in-china.html}
+
+\end{thebibliography}
+
+\end{document}
