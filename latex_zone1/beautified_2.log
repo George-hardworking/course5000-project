@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.9.13)  21 OCT 2025 17:26
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.9.13)  21 OCT 2025 17:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -614,7 +614,22 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 74.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 74.
- [1
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+
+ []
+
+
+Underfull \hbox (badness 1024) in paragraph at lines 82--83
+\T1/lmr/bx/n/10.95 To solve these prob-lems, this pol-icy brief pro-poses the im-ple-men-ta-
+ []
+
+[1
 
 ]
 File: global_co2_emissions.eps Graphic file (type eps)
@@ -626,9 +641,9 @@ Missing character: There is no ₂ ("2082) in font ec-lmr10!
 Missing character: There is no ₂ ("2082) in font ec-lmr10!
 [2]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 107.
+(Font)              <10.95> on input line 111.
  [3] [4] [5]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 154.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 158.
  (d:/texlive/texlive/2022/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -643,7 +658,7 @@ Package rerunfilecheck Info: File `beautified_2.out' has not changed.
 Here is how much of TeX's memory you used:
  22674 strings out of 476179
  428562 string characters out of 5809544
- 744936 words of memory out of 5000000
+ 748936 words of memory out of 5000000
  43062 multiletter control sequences out of 15000+600000
  518809 words of font info for 55 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
