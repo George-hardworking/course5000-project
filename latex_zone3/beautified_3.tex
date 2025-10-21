@@ -26,7 +26,6 @@
 \usepackage{hyperref}
 \usepackage{caption}
 \usepackage{tcolorbox}
-\usepackage{sectsty}
 \usepackage{titlesec}
 
 
@@ -42,8 +41,7 @@
 % Hyperref colors
 \hypersetup{colorlinks=true, linkcolor=schoolblue, urlcolor=schoolblue, citecolor=schoolblue}
 
-% Section style
-\allsectionsfont{\normalfont\bfseries\color{schoolblue}}
+% Section style using titlesec only
 \titleformat{\section}{\Large\bfseries\color{schoolblue}}{\thesection}{1em}{}
 \titleformat{\subsection}{\normalsize\bfseries\color{sectioncolor}}{\thesubsection}{0.5em}{}
 \titleformat{\subsubsection}{\normalsize\bfseries\color{sectioncolor}}{\thesubsection}{0.5em}{}
@@ -88,7 +86,7 @@
 \section*{Executive Summary}
 \begin{tcolorbox}[summarystyle]
 
-The scaling of Sustainable Aviation Fuel (SAF) in China is a pivotal measure for delivering on the nation's 'dual carbon' commitment and fostering the green transition of the civil aviation sector. However, the industry currently finds itself mired in a cycle of 'successful demonstrations but stalled expansion.' This policy brief identifies three fundamental bottlenecks impeding scale--up: a lack of mandatory market demand, an unstable feedstock supply system, and inadequate cost incentive mechanisms.\\
+The scaling of Sustainable Aviation Fuel (SAF) in China is a pivotal measure for delivering on the nation's 'dual carbon' commitment and fostering the green transition of the civil aviation sector. However, the industry currently finds itself mired in a cycle of 'successful demonstrations but stalled expansion.' This policy brief identifies three fundamental bottlenecks impeding scale--up, a lack of mandatory market demand, an unstable feedstock supply system, and inadequate cost incentive mechanisms.\\
 \\
 Although technological pathways have been validated, the absence of a binding blending mandate comparable to the EU's ReFuelEU regulation has resulted in insufficient procurement motivation from airlines, while producers remain hesitant to invest in large--scale production capacity due to market uncertainty. Simultaneously, the over--reliance on waste oils with a fragmented collection system, coupled with competitive international market procurement, leads to supply instability and high costs. More critically, SAF carries a 2–-6 times 'green premium' over conventional jet fuel, which existing policies have failed to effectively bridge. Although China has taken the lead in establishing a carbon footprint accounting standard for aviation fuels \cite{caac2025}, this system remains disconnected from price mechanisms such as subsidies and green finance, preventing the formation of a closed-loop 'accounting--incentives--settlement' mechanism.\\
 \\
@@ -110,7 +108,7 @@ China's carbon emissions have notably risen to become the world's largest over t
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\linewidth]{global_co2_emissions.eps}
-    \caption{CO₂ Emissions from Major Global Emitters}
+    \caption{CO2 Emissions from Major Global Emitters}
     \label{fig:co2_emissions}
 \end{figure}
 
@@ -121,7 +119,7 @@ The first pathway involves continuing to use fossil-based kerosene while improvi
 \\
 The second pathway adopts hydrogen and renewable electricity as aircraft energy sources. However, the application of electrification and hydrogen energy requires substantial modifications to aircraft structures, making large--scale adoption difficult in the short to medium term.\\
 \\
-The third pathway is the use of Sustainable Aviation Fuel (SAF). SAF shares similar physical characteristics with conventional aviation kerosene yet can reduce CO₂ and CH₄ emissions by 50\%--90\%, without requiring major alterations to aircraft systems or fuel supply infrastructure. According to projections by the International Air Transport Association (IATA), the aviation industry will achieve net--zero emissions by 2050, and the adoption of SAF is widely regarded as the most feasible technological pathway for aviation decarbonization in the coming decades.\\
+The third pathway is the use of Sustainable Aviation Fuel (SAF). SAF shares similar physical characteristics with conventional aviation kerosene yet can reduce CO2 and CH4 emissions by 50\%--90\%, without requiring major alterations to aircraft systems or fuel supply infrastructure. According to projections by the International Air Transport Association (IATA), the aviation industry will achieve net--zero emissions by 2050, and the adoption of SAF is widely regarded as the most feasible technological pathway for aviation decarbonization in the coming decades.\\
 \\
 The international community has already taken action. Major economies such as the European Union, the United Kingdom, and the United States are adopting a 'legislation--first' approach, establishing policy frameworks including mandatory blending mandates, certificate trading, and tax credits. These measures aim to create stable market demand, attract private investment, and accelerate the maturation and expansion of the SAF industrial chain.\\
 \\
@@ -131,7 +129,7 @@ The core contradiction lies in the fact that recent technological verification a
 \\
 This policy brief aims to diagnose the root causes of this contradiction and propose solutions. We focus on answering two questions: First, why has China's SAF industry encountered a 'scale--up bottleneck' even after completing technological demonstrations? Second, how can precise policy design quickly bridge the critical path from demonstration to commercialization?\\
 \\
-The analysis in this brief will focus on policies and market mechanisms, primarily targeting policymakers and key market participants who need to allocate public resources and formulate industry rules accordingly. The brief will sequentially analyze three key bottlenecks: Firstly，the lack of legally binding market demand signals; Secondly, a fragile and regionally mismatched feedstock supply chain; Thirdly, missing cost incentive mechanisms and a disconnect between the accounting system and market tools. For each bottleneck, this policy brief will assess feasible international policy options and propose implementation pathways and recommendations tailored to China's national conditions and regulatory framework. The economic implications of scaling SAF are significant, as discussed in Timmons and Terwel \cite{timmons2022} and Sandford and Malins \cite{sandford2024} for the UK context. The technical and policy progress globally is further detailed by IEA Bioenergy \cite{iea2024} and IRENA \cite{irena2024}.
+The analysis in this brief will focus on policies and market mechanisms, primarily targeting policymakers and key market participants who need to allocate public resources and formulate industry rules accordingly. The brief will sequentially analyze three key bottlenecks: Firstly, the lack of legally binding market demand signals; Secondly, a fragile and regionally mismatched feedstock supply chain; Thirdly, missing cost incentive mechanisms and a disconnect between the accounting system and market tools. For each bottleneck, this policy brief will assess feasible international policy options and propose implementation pathways and recommendations tailored to China's national conditions and regulatory framework. The economic implications of scaling SAF are significant, as discussed in Timmons and Terwel \cite{timmons2022} and Sandford and Malins \cite{sandford2024} for the UK context. The technical and policy progress globally is further detailed by IEA Bioenergy \cite{iea2024} and IRENA \cite{irena2024}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Overview of the problem Box%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Overview of the problem}
