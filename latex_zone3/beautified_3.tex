@@ -22,6 +22,7 @@
 \usepackage{fancyhdr}
 \usepackage{setspace}
 \usepackage{booktabs}
+\usepackage{colortbl} % for \rowcolor and \arrayrulecolor in tables
 \usepackage{xurl}
 \usepackage{hyperref}
 \usepackage{caption}
@@ -38,13 +39,14 @@
 \colorlet{schoolblueframe}{schoolblue!30}
 \definecolor{sectioncolor}{RGB}{41,128,185}
 
+
 % Hyperref colors
 \hypersetup{colorlinks=true, linkcolor=schoolblue, urlcolor=schoolblue, citecolor=schoolblue}
 
 % Section style using titlesec only
 \titleformat{\section}{\Large\bfseries\color{schoolblue}}{\thesection}{1em}{}
 \titleformat{\subsection}{\normalsize\bfseries\color{sectioncolor}}{\thesubsection}{0.5em}{}
-\titleformat{\subsubsection}{\normalsize\bfseries\color{sectioncolor}}{\thesubsection}{0.5em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\color{sectioncolor}}{\thesubsubsection}{0.5em}{}
 
 
 % Executive summary box style
@@ -71,7 +73,7 @@
 \newcommand{\boxedtext}[1]{\noindent\colorbox{schoolbluebox}{\parbox{\dimexpr\linewidth-2\fboxsep}{#1}}}
 
 % Caption style
-\captionsetup{font=small, labelfont=bf, labelfont={color=schoolblue}, textfont=normal}
+\captionsetup{font=small, labelfont={bf, color=schoolblue}, textfont={bf, color=schoolblue}}
 
 % Document meta
 \title{\color{schoolblue}\textbf{China's Sustainable Aviation Fuel: How to Break Through the Bottleneck of Large-scale Production?}}
@@ -101,14 +103,13 @@ To solve these problems, this policy brief proposes the implementation of a mand
 
 \newpage
 \section{Introduction}
-China's carbon emissions have notably risen to become the world's largest over the past 15 years (Figure 1). From a global perspective, the aviation industry contributes approximately 2\%--3\% of annual carbon emissions. Its 'hard--to--abate' nature makes it one of the critical challenges in achieving the climate goals of the Paris Agreement, thereby placing significant decarbonization pressure on China's aviation sector.
-
+China's carbon emissions have notably risen to become the world's largest over the past 15 years \textbf{(Figure 1)}. From a global perspective, the aviation industry contributes approximately 2\%--3\% of annual carbon emissions. Its 'hard--to--abate' nature makes it one of the critical challenges in achieving the climate goals of the Paris Agreement, thereby placing significant decarbonization pressure on China's aviation sector.
 
 
 \begin{figure}[htbp]
     \centering
+    \caption{ {\color{schoolblue}CO2 Emissions from Major Global Emitters}}
     \includegraphics[width=0.9\linewidth]{global_co2_emissions.eps}
-    \caption{CO2 Emissions from Major Global Emitters}
     \label{fig:co2_emissions}
 \end{figure}
 
@@ -136,7 +137,59 @@ The analysis in this brief will focus on policies and market mechanisms, primari
 The 'Special Plan for Civil Aviation Green Development during the 14th Five-Year Plan Period' \cite{caac2021} has set the industry target of 'cumulative consumption of sustainable aviation fuel (SAF) reaching 50,000 tons by 2025', but it has not established a mandatory blending ratio nationwide or a unified carbon intensity threshold. This is a directional goal rather than a legal constraint, making it difficult to form a predictable rigid demand. During the same period, more focused application pilots and demonstrations have been promoted. The competent authorities have released the phased arrangements for the pilot projects, indicating that the overall situation is still in the 'exploration --- verification' stage. On the industrial side, \textit{China's Sustainable Aviation Fuel --- The Road to Carbon Neutrality for the Aviation Industry} (Deloitte, 2023) \cite{deloitte2023} has summarized that as of May 2023, the total operating and planned production capacity in China is approximately 160--180 million tons per year, mainly based on the HEFA route, confirming the characteristic of 'having projects and early implementation'. Without strong constraints, the production capacity is difficult to steadily increase, and the renovation of airport storage and independent tank storage is also difficult to justify the investment return.
 
 \subsection{Raw material supply constraints and cross-border mismatches}
-At present, the most mature and accessible raw material is still waste edible oil (UCO), but it faces practical constraints such as scattered sources, small recycling radius, high collection and transportation costs, and limited recoverable volume. Moreover, driven by international market prices and demand, UCO has the risk of outflow, which raises domestic raw material prices and weakens supply stability. The research report \textit{Research on the Development of Sustainable Aviation Fuel Industry in China} points out: In the medium and long term, while consolidating the foundation of UCO, it is necessary to gradually expand to various raw materials such as agricultural and forestry waste, and improve the cross-regional collection and transportation as well as quality traceability system. Otherwise, the 'raw material bottleneck' will directly restrict the ramp-up of production capacity and continuous supply. Deloitte's report \textit{China's Sustainable Aviation Fuel - The Road to Carbon Neutrality for the Aviation Industry} \cite{deloitte2023} based on customs and other data shows the synchronous growth of UCO exports and domestic uses, and gives theoretical upper limit estimates of potential available raw materials and corresponding SAF production capacity (about 46 million tons per grade upper limit), while emphasizing that the potential needs to be transformed into available supply depends on the collection network, traceability and priority rules. This directly affects the annual blending plans of airlines and long-term supply contracts of suppliers. Without a stable, traceable and large-scale raw material system, it is difficult to support stable blending and long-term supply contracts, and the costs and risks of the upstream and downstream of the industry cannot be accepted by banks and investors.
+At present, the most mature and accessible raw material is still waste edible oil (UCO), but it faces practical constraints such as scattered sources, small recycling radius, high collection and transportation costs, and limited recoverable volume. Moreover, driven by international market prices and demand, UCO has the risk of outflow, which raises domestic raw material prices and weakens supply stability. Specifically, in 2024 China collected and processed approximately 5.4 million tonnes of used cooking oil (UCO), with 55\% (2.95 million tonnes) exported and 45\% (2.45 million tonnes) consumed domestically. The exports primarily flowed to the United States (43\%) and the European Union (35\%) \textbf{(Table 1)}. This trade structure indicates that domestically available feedstock continues to be absorbed by external demand, driving up raw material costs and supply uncertainties for local SAF projects.
+
+
+{\arrayrulecolor{schoolblue}%
+\begin{table}[htbp]
+\centering
+\caption{ {\color{schoolblue}China UCO (Used Cooking Oil) 2024 Overview — Integrated Table}}
+\label{tab:ucosummary}
+
+% 使用 booktabs 的 \toprule, \midrule, \bottomrule 来代替 \hline
+% 使用 \rowcolor{...} 为第一行设置浅色背景
+\begin{tabular}{lrr}
+\toprule
+\rowcolor{schoolbluelight} % 浅蓝色背景
+\textbf{A. 2024 total \& allocation (Unit: Mt; shares vs total)} & & \\
+\midrule
+\textbf{Item} & \textbf{Volume (Mt)} & \textbf{Share} \\
+\cmidrule(lr){1-3}
+Total collected \& processed & 540.0 & 100\% \\
+Domestic use & 245.0 & 45\% \\
+Exports & 295.0 & 55\% \\
+\midrule
+\rowcolor{schoolbluelight} % 浅蓝色背景
+\textbf{B. 2024 export destinations (Base: exports 295.0 Mt)} & & \\
+\midrule
+\textbf{Export destination (Base: Exports 295.0 Mt)} & \textbf{Volume (Mt)} & \textbf{Share} \\
+\cmidrule(lr){1-3}
+United States & 126.8 & 43\% \\
+European Union (e.g., NL, ES) & 103.2 & 35\% \\
+Singapore & 35.4 & 12\% \\
+Others & 29.5 & 10\% \\
+\textbf{Total} & \textbf{295.0} & \textbf{100\%} \\
+\midrule
+\rowcolor{schoolbluelight} % 浅蓝色背景
+\textbf{C. Exports by year (Base: cumulative 655.6 Mt; 2024 = 45\%)} & & \\
+\midrule
+\textbf{Exports by year (Base: cumulative 655.6 Mt)} & \textbf{Volume (Mt)} & \textbf{Share} \\
+\cmidrule(lr){1-3}
+2024 & 295.0 & 45\% \\
+2023 (derived) & 209.8 & 32\% \\
+2022 \& earlier (derived) & 150.8 & 23\% \\
+\textbf{Cumulative (2022 \& earlier - 2024)} & \textbf{655.6} & \textbf{100\%} \\
+\bottomrule
+\end{tabular}
+
+\medskip
+\footnotesize Note: Unit = million tonnes (Mt). Source: China's General Administration of Customs.
+\end{table}}
+
+From a historical composition perspective, the 2024 export volume already accounts for 45\% of cumulative exports, indicating significantly strengthened external demand in recent years. Without urgent efforts to expand the available feedstock pool through cross--border collaboration and attribute accounting, while improving domestic collection and traceability systems, production ramp--up will remain constrained and airlines will struggle to consistently execute their blending schedules.
+
+
+The research report \textit{Research on the Development of Sustainable Aviation Fuel Industry in China} points out: In the medium and long term, while consolidating the foundation of UCO, it is necessary to gradually expand to various raw materials such as agricultural and forestry waste, and improve the cross-regional collection and transportation as well as quality traceability system. Otherwise, the 'raw material bottleneck' will directly restrict the ramp-up of production capacity and continuous supply. Deloitte's report \textit{China's Sustainable Aviation Fuel - The Road to Carbon Neutrality for the Aviation Industry} \cite{deloitte2023} based on customs and other data shows the synchronous growth of UCO exports and domestic uses, and gives theoretical upper limit estimates of potential available raw materials and corresponding SAF production capacity (about 46 million tons per grade upper limit), while emphasizing that the potential needs to be transformed into available supply depends on the collection network, traceability and priority rules. This directly affects the annual blending plans of airlines and long-term supply contracts of suppliers. Without a stable, traceable and large-scale raw material system, it is difficult to support stable blending and long-term supply contracts, and the costs and risks of the upstream and downstream of the industry cannot be accepted by banks and investors.
 
 \subsection{High costs, weak incentives, accounting---pricing misalignment}
 China's Study on Sustainable Aviation Fuel Industry Development \cite{tian2025} indicates that the unit cost of multiple SAF production pathways is approximately 2--6 times that of conventional petroleum-based jet fuel, making the 'green premium' a core barrier to commercialization. Concurrently, insufficient fiscal/tax incentives and the absence of price transmission mechanisms make it difficult for airlines and fuel producers to absorb this cost differential. Deloitte's report, \textit{Sustainable Aviation Fuel in China -- Aviation's Path to Carbon Neutrality} \cite{deloitte2023}, further cites the price point and abatement cost for neat SAF (approximately \$8.67 per gallon; \textasciitilde\$1,000--1,200 per ton of CO\textsubscript{2}), analyzing key cost drivers such as feedstock availability, economies of scale, policy incentives, value chain efficiency, and reporting standards. The report underscores that reliance on demonstration projects alone is insufficient for spontaneous industry growth.
@@ -159,6 +212,43 @@ In terms of law-making and time planning, the Civil Aviation Administration, the
 Form a rigid and predictable demand curve, facilitating airlines to sign long-term supply and purchase contracts, and forcing the upgrading of production capacity and storage and transportation facilities at airports; the purchase price sets an upper limit for compliance costs, reducing the premium for policy uncertainty.
 
 \subsection{Boosting SAF Scale-Up through Feedstock Cooperation and National Accounting}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 According to the regional collaboration approach in \textit{Sustainable Aviation Fuels in Southeast Asia} (IRENA (2024)) \cite{irena2024}: On one hand, sign a cross-border raw material and attribute collaboration framework with the major raw material source countries of UCO and agricultural and forestry residues in Southeast Asia, and unify the sustainability and traceability rules; on the other hand, establish a national 'book-and-claim' platform to separate attributes from physical flows, enabling raw materials to be processed locally within the region, but the emission reduction attributes can be issued, traded, and offset through the platform, allowing Chinese airlines to use them in compliance. Form a rigid and predictable demand curve, facilitating airlines to sign long-term supply and purchase contracts, forcing capacity expansion and storage and transportation renovations on the part of airports; the purchase price sets an upper limit for compliance costs, reducing the premium for policy uncertainty.
 
 \subsubsection{China's landing method}
