@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.9.13)  21 OCT 2025 22:26
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.9.13)  21 OCT 2025 22:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -655,4 +655,73 @@ Package hyperref Info: Link coloring ON on input line 83.
 (d:/texlive/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (d:/texlive/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
-Package: refcount 2019/1
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (d:/texlive/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count315
+)
+LaTeX Info: Redefining \ref on input line 83.
+LaTeX Info: Redefining \pageref on input line 83.
+LaTeX Info: Redefining \nameref on input line 83.
+ (./beautified_3.out) (./beautified_3.out)
+\@outlinefile=\write4
+\openout4 = `beautified_3.out'.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 86.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 86.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 86.
+ (d:/texlive/texlive/2022/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+)
+Underfull \hbox (badness 10000) in paragraph at lines 91--96
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--96
+
+ []
+
+
+Underfull \hbox (badness 1975) in paragraph at lines 91--96
+\TU/TeXGyreTermes(0)/m/n/10.95 blending obligation with a tradable certificate system, the establishment of a national
+ []
+
+[1
+
+]
+File: global_co2_emissions.eps Graphic file (type eps)
+<global_co2_emissions.eps>
+ [2] [3]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 151.
+ [4] [5] [6] [7]
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Underfull \hbox (badness 4872) in paragraph at lines 285--287
+[]\TU/TeXGyreTermes(0)/m/n/10.95 Civil Aviation Administration of China (CAAC). (2025, August 9). \TU/TeXGyreTermes(0)/m/it/10.95 Greenhouse gases—
+ []
+
+[8] (./beautified_3.aux)
+Package rerunfilecheck Info: File `beautified_3.out' has not changed.
+(rerunfilecheck)             Checksum: 1ADC8C2D3AA84C4AD7DF936EEFD2AB49;3676.
+ ) 
+Here is how much of TeX's memory you used:
+ 24768 strings out of 476179
+ 512269 string characters out of 5809544
+ 886272 words of memory out of 5000000
+ 45144 multiletter control sequences out of 15000+600000
+ 473455 words of font info for 64 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 83i,11n,85p,1481b,463s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on beautified_3.pdf (8 pages).
